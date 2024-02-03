@@ -13,6 +13,10 @@ describe('LoggerService', () =>{
     logSpy = spyOn(service, 'log');
   });
 
+  it('should create an instance of LoggerService', () => {
+      expect(service).toBeTruthy();
+  });
+
   it('should call log method with the correct message', () => {
     const message = 'Test message';
     service.log(message);
